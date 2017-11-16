@@ -10,35 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
-	<style>
-
-	/* Style for our header texts
-	* --------------------------------------- */
-    body {
-        background: grey
-    }
-	h1{
-		font-size: 5em;
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	</style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -87,7 +59,7 @@
             <input type="text" name="campaignname" id="campaignname">
     </div>
 
-    <!-- Select a Brand
+    <!-- Select a Brand -->
 	<div class="section">
         <label for="brand">Select Brand</label>
         <select name="brand" id="brand">
@@ -98,7 +70,7 @@
             <option>Faster</option>
         </select>
     </div>
-    -->
+
     <!-- Select a Country -->
     <div class="section">
         <label for="entity">Select Entity</label>
@@ -153,7 +125,7 @@
     <!-- Currency -->
 	<div class="section">
         <input type="number" name="amount" id="amount" pattern="[0-9.,]+">
-        <select name="brand" id="brand" class="small">
+        <select name="currency" id="currency" class="small">
             <option>Euros</option>
             <option>Dollar</option>
             <option>Pound</option>
@@ -165,7 +137,7 @@
 
      <!-- Download -->
 	<div class="section">
-        <button id="download" style="">download</button>
+        <button id="download" >download</button>
     </div>
 </div>
 
