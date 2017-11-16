@@ -213,4 +213,33 @@ $( function() {
     });
 
 
+    function setTarget(){
+        used = parseInt( $("#used").text() );
+        total = parseInt( $("#total").text() );
+
+
+        percentage = used/(total/100);
+        console.log('percentage ' + percentage);
+        $('#loading-target span').width(percentage+'%');
+    }
+    setTarget();
+
+
+
+
+    $('#fullpage').fullpage({
+        afterResponsive: function(isResponsive){
+        },
+        onLeave: function(index, nextIndex, direction){
+            if (index == 8){
+                used = parseInt( $("#used").text() );
+                amount = parseInt( $('#amount').val() );
+
+                $("#used").html(amount + used);
+                setTarget();
+            }
+        },
+    });
+
+
 });

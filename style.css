@@ -78,3 +78,50 @@ button{
     text-transform: uppercase;
     border: solid 4px #45AADB;
 }
+
+
+#credentials{
+position: fixed;
+top: 0;
+right: 0;
+background: #E0E0E0;
+font-size: 0.8em;
+padding:  1em 2.2em;
+}
+
+#credentials p {
+    margin: 0;
+}
+
+#target{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #E0E0E0;
+    font-size: 0.8em;
+    padding:  0.5em 1em;
+    display: flex;
+    width: 40%;
+    z-index: 10000000;
+    border-radius: 5px 0 0 0px;
+}
+
+#target div#loading-target{
+    flex: 6;
+    background-color: #D4D4D4;
+    border-radius: 5px;
+}
+
+#target div{
+    flex: 1;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#target div#loading-target span{
+    content: '';
+    background: #41A0CF;
+    height: 100%;
+    display: block;
+    border-radius: 5px 0 0 5px;
+}
