@@ -127,7 +127,8 @@
 }
 .ui-menu .ui-menu-item-wrapper {
 	position: relative;
-	padding: 3px 1em 3px .4em;
+    padding: 3px 1em 3px .4em;
+    font-size: 1.5em
 }
 .ui-menu .ui-menu-divider {
 	margin: 5px 0;
@@ -717,7 +718,7 @@ button.ui-button::-moz-focus-inner {
 }
 .ui-selectmenu-icon.ui-icon {
 	float: right;
-	margin-top: 0;
+	margin-top: 7px;
 }
 .ui-slider {
 	position: relative;
@@ -952,10 +953,10 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-	border: 1px solid #cccccc;
-	background: #ededed;
+	border: 4px solid #41A0CF;
+	background: #49B6EB;
 	font-weight: normal;
-	color: #2b2b2b;
+
 }
 .ui-state-hover a,
 .ui-state-hover a:hover,
@@ -980,10 +981,12 @@ a.ui-button:focus {
 a.ui-button:active,
 .ui-button:active,
 .ui-button.ui-state-active:hover {
-	border: 1px solid #003eff;
-	background: #007fff;
+	border: 1px solid #45AADB;
+	background: #45AADB;
 	font-weight: normal;
-	color: #ffffff;
+    color: #ffffff;
+
+    font-size: 1.5em;
 }
 .ui-icon-background,
 .ui-state-active .ui-icon-background {

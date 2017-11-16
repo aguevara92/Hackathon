@@ -44,7 +44,7 @@ $( function() {
 
 
 
-    $('#brand, #channel, #country').selectmenu();
+    $('#brand, #channel, #country, #subchannel, #currency').selectmenu();
 
 
 
@@ -191,7 +191,7 @@ $( function() {
                         thisRow[i] = formatedDate;
 
                     } else if (csvHeader[i] == realChannel){
-                        thisRow[i] = amount/amountOfDays;
+                        thisRow[i] = (amount/amountOfDays).toFixed(2);
                     } else {
                         thisRow[i] = '';
                     }
