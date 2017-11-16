@@ -44,7 +44,7 @@ $( function() {
 
 
 
-    $('#brand, #channel').selectmenu();
+    $('#brand').selectmenu();
 
 
 
@@ -271,7 +271,6 @@ $(document).ready(function() {
                 }
                 
                 $(".channels").change(function(){
-                    console.log('channelSelected');
                     $(".hide-channel").hide('fast');
                     $(".subchannels option").remove();
                     $(".hide-channel").show('fast');
@@ -280,12 +279,11 @@ $(document).ready(function() {
                     for(var i=0 ; i < obj.alldata.length; i++) {
                         if (obj.alldata[i]['channel'] == itemSelected ){
                             channelSelected.push(obj.alldata[i]['subchannel']);
+                            console.log(channel);
                         }
                     }
-
-                    
-                    
-                    for(var i=0 ; i < entitySelected.length; i++) {
+                    console.log(channelSelected);
+                    for(var i=0 ; i < channelSelected.length; i++) {
                         $('.subchannels').append('<option>' + channelSelected[i] + '</option>');
                     }
                     $('.subchannels').prepend('<option selected>Select Sub-channel</option>')
