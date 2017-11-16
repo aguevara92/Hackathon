@@ -8,13 +8,15 @@
 	<meta name="Resource-type" content="Document" />
 
 
-    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
-    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="examples.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
 	<style>
 
 	/* Style for our header texts
 	* --------------------------------------- */
+    body {
+        background: grey
+    }
 	h1{
 		font-size: 5em;
 		font-family: arial,helvetica;
@@ -45,21 +47,19 @@
 	<![endif]-->
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="../vendors/scrolloverflow.js"></script>
 
-	<script type="text/javascript" src="../jquery.fullPage.js"></script>
-	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript" src="js/vendors/scrolloverflow.js"></script>
+
+    <script type="text/javascript" src="js/fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/table2csv.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage'],
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
-				responsiveHeight: 600,
 				afterResponsive: function(isResponsive){
-
 				}
 			});
 		});
@@ -68,73 +68,98 @@
 </head>
 <body>
 
-<select id="demosMenu">
-  <option selected>Choose Demo</option>
-  <option id="activeSlide">Active section and slide</option>
-  <option id="apple">Apple iPhone demo (animations)</option>
-  <option id="autoHeight">Auto height</option>
-  <option id="autoplayVideoAndAudio">Autoplay Video and Audio</option>
-  <option id="backgrounds">Background images</option>
-  <option id="backgroundsFixed">Fixed fullscreen backgrounds</option>
-  <option id="backgroundVideo">Background video</option>
-  <option id="callbacks">Callbacks</option>
-  <option id="continuousHorizontal">Continuous horizontal</option>
-  <option id="continuousVertical">Continuous vertical</option>
-  <option id="parallax">Parallax</option>
-  <option id="css3">CSS3</option>
-  <option id="dragAndMove">Drag And Move</option>
-  <option id="easing">Easing</option>
-  <option id="fadingEffect">Fading Effect</option>
-  <option id="fixedHeaders">Fixed headers</option>
-  <option id="gradientBackgrounds">Gradient backgrounds</option>
-  <option id="interlockedSlides">Interlocked Slides</option>
-  <option id="looping">Looping</option>
-  <option id="methods">Methods</option>
-  <option id="navigationV">Vertical navigation dots</option>
-  <option id="navigationH">Horizontal navigation dots</option>
-  <option id="noAnchor">No anchor links</option>
-  <option id="normalScroll">Normal scrolling</option>
-  <option id="normalScrollElements">Normal scroll elements</option>
-  <option id="offsetSections">Offset sections</option>
-  <option id="oneSection">One single section</option>
-  <option id="resetSliders">Reset sliders</option>
-  <option id="responsiveAutoHeight">Responsive Auto Height</option>
-  <option id="responsiveHeight">Responsive Height</option>
-  <option id="responsiveWidth">Responsive Width</option>
-  <option id="responsiveSlides">Responsive Slides</option>
-  <option id="scrollBar">Scroll bar enabled</option>
-  <option id="scrollHorizontally">Scroll horizontally</option>
-  <option id="scrollOverflow">Scroll inside sections and slides</option>
-  <option id="scrollOverflowReset">ScrollOverflow Reset</option>
-  <option id="lazyLoad">Lazy load</option>
-  <option id="scrollingSpeed">Scrolling speed</option>
-</select>
-
 
 <div id="fullpage">
-	<div class="section " id="section0">
-		<div class="intro">
-			<h1>Responsive</h1>
-			<p>This example will turn to normal scroll when the window size gets smaller than 600px height</p>
-		</div>
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide" id="slide1">
-			<div class="intro">
-				<h1>Ideal for small screens</h1>
-			</div>
-		</div>
 
-	    <div class="slide" id="slide2">
-			<h1>This example uses responsiveHeight: 600</h1>
-		</div>
-
-	</div>
-	<div class="section" id="section2">
+    <!-- Title of the campaign generator -->
+    <div class="section">
 		<div class="intro">
-			<h1>Keep it simple!</h1>
+			<h1>Create a new campaign</h1>
+            <p>Fill the form and chill my friend</p>
+
+            <p>Entity sample: Foodora</p>
 		</div>
-	</div>
+    </div>
+
+     <!-- TEXT FIELD name of Campagin -->
+	<div class="section">
+            <h2>Enter the name of the campaign</h2>
+            <input type="text" name="campaignname" id="campaignname">
+    </div>
+
+    <!-- Select a Brand
+	<div class="section">
+        <label for="brand">Select Brand</label>
+        <select name="brand" id="brand">
+            <option>Slower</option>
+            <option>Slow</option>
+            <option>Medium</option>
+            <option>Fast</option>
+            <option>Faster</option>
+        </select>
+    </div>
+    -->
+    <!-- Select a Country -->
+    <div class="section">
+        <label for="country">Select Country</label>
+        <select name="country" id="country">
+            <option>Germany</option>
+            <option>Australia</option>
+            <option>Finland</option>
+            <option>Norway</option>
+            <option>Italy</option>
+            <option>France</option>
+            <option>Austria</option>
+            <option>Sweden</option>
+            <option>Netherlands</option>
+            <option>Canada</option>
+        </select>
+    </div>
+
+    <!-- Select a Channel -->
+    <div class="section">
+        <label for="channel">Select Channel</label>
+        <select name="channel" id="channel">
+            <option>Display</option>
+        </select>
+    </div>
+
+     <!-- Select a Sub Channels -->
+     <div class="section">
+        <label for="subchannel">Select subchannel</label>
+        <select name="subchannel" id="subchannel">
+            <option>RMA</option>
+            <option>Reach</option>
+            <option>RMO</option>
+        </select>
+    </div>
+
+    <!-- Date Range -->
+	<div class="section">
+        <label for="from">From</label>
+        <input type="text" id="from" name="from">
+        <label for="to">to</label>
+        <input type="text" id="to" name="to">
+        <span id="days"></span>
+    </div>
+
+    <!-- Currency -->
+	<div class="section">
+        <input type="number" name="amount" id="amount" pattern="[0-9.,]+">
+        <select name="brand" id="brand" class="small">
+            <option>Euros</option>
+            <option>Dollar</option>
+            <option>Pound</option>
+            <option>Peso</option>
+            <option>Sol</option>
+        </select>
+    </div>
+
+
+     <!-- Download -->
+	<div class="section">
+        <button id="download" style="">download</button>
+    </div>
 </div>
 
 

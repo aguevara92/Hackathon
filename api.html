@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Hackathon</title>
+	<meta name="author" content="Andres Guevara" />
+	<meta name="Resource-type" content="Document" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="download" style="">download</button>
+
+
+
+
+    <script type="text/javascript">
+     $(document).ready(function () {
+
+        var p = {
+          "name":"ABC",
+          "address_line_1": "House no 12",
+          "address_line_2": "Near park",
+          "phone_number": "12326728772"
+        };
+        var rows = [];
+
+        for (k in p) {
+            if (p.hasOwnProperty(k)) {
+                rows.push([k, p[k]]);
+            }
+        }
+
+        function downloadableCSV(rows) {
+          var content = "data:text/csv;charset=utf-8,";
+
+          rows.forEach(function(row, index) {
+            content += row.join(",") + "\n";
+          });
+
+          return encodeURI(content);
+        }
+
+        $("#download").click(function() {
+          window.open(downloadableCSV(rows));
+        });
+    });
+    </script>
+
+
+
+</body>
+</html>
