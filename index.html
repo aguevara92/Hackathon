@@ -103,12 +103,12 @@
     <div class="section">
         <label for="entity">Select Entity</label>
         <select name="entity" id="entities" class="entities">
-                <option value="Select Entity" selected>Select Entity</option>
+                <option selected>Select Entity</option>
         </select>
         <span class="hide-country" style="display: none">
             <label for="country">Select Country</label>
             <select name="country" id="country" class="countries">
-                    <option value="Select Country" selected>Select Country</option>
+                    <option selected>Select Country</option>
             </select>
         </span>
 
@@ -119,9 +119,16 @@
     <!-- Select a Channel -->
     <div class="section">
         <label for="channel">Select Channel</label>
-        <select name="channel" id="channel">
-            <option>Display</option>
+        <select name="channel" id="channel" class="channels">
+            <option selected>Display Channel</option>
         </select>
+        <span class="hide-channel" style="display: none;">
+            <label for="subchannel">Select Sub-channel</label>
+            <select name="subchannel" id="subchannel" class="subchannels">
+                <option selected>Display Sub-channel</option>
+            </select>
+        </span>
+        
     </div>
 
      <!-- Select a Sub Channels -->

@@ -1,5 +1,5 @@
 {
-"SELECT DISTINCT\n    SPLIT_PART(channel_mapping, '_', 1) AS channel,\n    SPLIT_PART(channel_mapping, '_', 2) AS subchannel\nFROM dwh_bl.marketing_costs": [
+	"alldata": [
 	{
 		"channel" : "Brand",
 		"subchannel" : "SEM"

@@ -217,7 +217,7 @@ $( function() {
 
 
 $(document).ready(function() {
-	var countrySelected = [];
+	var countrySelected = '';
     $.getJSON("/data/entities.json", function(obj) {
 		for(var i=0 ; i < obj.alldata.length; i++)
 
@@ -261,5 +261,38 @@ $(document).ready(function() {
 				
 			});
 
-		});
+        });
+        
+        $.getJSON("/data/channels.json", function(obj) {
+            for(var i=0 ; i < obj.alldata.length; i++)
+                {
+                    var channel=$('<option class="channel_loaded"></option>').text(obj.alldata[i]['channel']);
+                    $('.channels').append(channel);
+                }
+                
+                $(".channels").change(function(){
+                    console.log('channelSelected');
+                    $(".hide-channel").hide('fast');
+                    $(".subchannels option").remove();
+                    $(".hide-channel").show('fast');
+                    var itemSelected = $(this).val();
+                    channelSelected = [];
+                    for(var i=0 ; i < obj.alldata.length; i++) {
+                        if (obj.alldata[i]['channel'] == itemSelected ){
+                            channelSelected.push(obj.alldata[i]['subchannel']);
+                        }
+                    }
+
+                    
+                    
+                    for(var i=0 ; i < entitySelected.length; i++) {
+                        $('.subchannels').append('<option>' + channelSelected[i] + '</option>');
+                    }
+                    $('.subchannels').prepend('<option selected>Select Sub-channel</option>')
+                    
+                });
+                
+    
+            });
+
 	});
