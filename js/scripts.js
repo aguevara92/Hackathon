@@ -44,7 +44,7 @@ $( function() {
 
 
 
-    $('#brand, #channel, #country').selectmenu();
+    $('#brand, #channel').selectmenu();
 
 
 
@@ -214,3 +214,52 @@ $( function() {
 
 
 });
+
+
+$(document).ready(function() {
+	var countrySelected = [];
+    $.getJSON("/data/entities.json", function(obj) {
+		for(var i=0 ; i < obj.alldata.length; i++)
+
+			{
+				var newEntity=$('<option class="country_loaded"></option>').text(obj.alldata[i]['management_entity_group']);
+				$('.entities').append(newEntity);
+			}
+
+			$(".entities").change(function(){
+
+				$('.country_id').text('');
+				$(".hide-country").hide('fast');
+				$(".countries option").remove();
+				$(".hide-country").show('fast');
+				var itemSelected = $(this).val();
+				entitySelected = [];
+				for(var i=0 ; i < obj.alldata.length; i++) {
+					if (obj.alldata[i]['management_entity_group'] == itemSelected ){
+						entitySelected.push(obj.alldata[i]['display_name']);
+					}
+				}
+				
+				for(var i=0 ; i < entitySelected.length; i++) {
+					$('.countries').append('<option>' + entitySelected[i] + '</option>');
+				}
+				$('.countries').prepend('<option value="Select a Country" selected>Select Country</option>')
+				
+			});
+
+			$(".countries").change(function(){
+				$(".country_id").show('fast');
+				var itemSelected = $(this).val();
+				countrySelected = '';
+				for(var i=0 ; i < obj.alldata.length; i++) {
+					if (obj.alldata[i]['display_name'] == itemSelected ){
+						countrySelected = obj.alldata[i]['source_id'];
+					}
+				}
+					
+				$('.country_id').text('ID: ' + countrySelected);
+				
+			});
+
+		});
+	});

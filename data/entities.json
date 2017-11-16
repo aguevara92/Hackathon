@@ -1,0 +1,453 @@
+{
+"alldata": [
+	{
+		"source_id" : 1,
+		"management_entity_group" : "Delivery Hero Korea",
+		"country" : "KR - South Korea",
+		"display_name" : "Baedaltong"
+	},
+	{
+		"source_id" : 2,
+		"management_entity_group" : "Delivery Hero Greece",
+		"country" : "GR - Greece",
+		"display_name" : "eFood"
+	},
+	{
+		"source_id" : 3,
+		"management_entity_group" : "Delivery Hero Nordics",
+		"country" : "FI - Finland",
+		"display_name" : "Finland"
+	},
+	{
+		"source_id" : 5,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "BR - Brazil",
+		"display_name" : "Brazil"
+	},
+	{
+		"source_id" : 6,
+		"management_entity_group" : "Delivery Hero Korea",
+		"country" : "KR - South Korea",
+		"display_name" : "Yogiyo"
+	},
+	{
+		"source_id" : 10,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "AR - Argentina",
+		"display_name" : "Argentina"
+	},
+	{
+		"source_id" : 11,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "BR - Brazil",
+		"display_name" : "Brazil"
+	},
+	{
+		"source_id" : 13,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "CL - Chile",
+		"display_name" : "Chile"
+	},
+	{
+		"source_id" : 18,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "PA - Panama",
+		"display_name" : "Panama"
+	},
+	{
+		"source_id" : 19,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "PY - Paraguay",
+		"display_name" : "Paraguay"
+	},
+	{
+		"source_id" : 22,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "UY - Uruguay",
+		"display_name" : "Uruguay"
+	},
+	{
+		"source_id" : 23,
+		"management_entity_group" : "ClickDelivery South America",
+		"country" : "CO - Colombia",
+		"display_name" : "Colombia"
+	},
+	{
+		"source_id" : 24,
+		"management_entity_group" : "ClickDelivery South America",
+		"country" : "PE - Peru",
+		"display_name" : "Peru"
+	},
+	{
+		"source_id" : 25,
+		"management_entity_group" : "ClickDelivery South America",
+		"country" : "EC - Ecuador",
+		"display_name" : "Ecuador"
+	},
+	{
+		"source_id" : 28,
+		"management_entity_group" : "Pedidosya South America",
+		"country" : "BR - Brazil",
+		"display_name" : "Brazil"
+	},
+	{
+		"source_id" : 30,
+		"management_entity_group" : "Damejidlo Czech Republic",
+		"country" : "CZ - Czech Republic",
+		"display_name" : "Czech Republic"
+	},
+	{
+		"source_id" : 32,
+		"management_entity_group" : "Yemeksepeti Turkey",
+		"country" : "TR - Turkey",
+		"display_name" : "Turkey"
+	},
+	{
+		"source_id" : 33,
+		"management_entity_group" : "Delivery Hero Greece",
+		"country" : "GR - Greece",
+		"display_name" : "ClickDeliveryGreece"
+	},
+	{
+		"source_id" : 35,
+		"management_entity_group" : "Lieferheld\/pizza.de",
+		"country" : "DE - Germany",
+		"display_name" : "Lieferheld"
+	},
+	{
+		"source_id" : 36,
+		"management_entity_group" : "Lieferheld\/pizza.de",
+		"country" : "DE - Germany",
+		"display_name" : "Pizza.de"
+	},
+	{
+		"source_id" : 37,
+		"management_entity_group" : "Hungry House Group",
+		"country" : "GB - United Kingdom",
+		"display_name" : "United Kingdom"
+	},
+	{
+		"source_id" : 39,
+		"management_entity_group" : "Mjam GmbH",
+		"country" : "AT - Austria",
+		"display_name" : "Austria"
+	},
+	{
+		"source_id" : 40,
+		"management_entity_group" : "Delivery Hero Nordics",
+		"country" : "SE - Sweden",
+		"display_name" : "Sweden"
+	},
+	{
+		"source_id" : 41,
+		"management_entity_group" : "Pizza Portal Poland",
+		"country" : "PL - Poland",
+		"display_name" : "Poland"
+	},
+	{
+		"source_id" : 42,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "AE - United Arab Emirates",
+		"display_name" : "UAE - Talabat"
+	},
+	{
+		"source_id" : 43,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "BH - Bahrain",
+		"display_name" : "Bahrain - Talabat"
+	},
+	{
+		"source_id" : 44,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "KW - Kuwait",
+		"display_name" : "Kuwait - Talabat"
+	},
+	{
+		"source_id" : 45,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "OM - Oman",
+		"display_name" : "Oman - Talabat"
+	},
+	{
+		"source_id" : 46,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "QA - Qatar",
+		"display_name" : "Qatar - Talabat"
+	},
+	{
+		"source_id" : 47,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "SA - Saudi Arabia",
+		"display_name" : "Saudi Arabia - Talabat"
+	},
+	{
+		"source_id" : 52,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "AE - United Arab Emirates",
+		"display_name" : "UAE - FoodOnClick"
+	},
+	{
+		"source_id" : 54,
+		"management_entity_group" : "Delivery Hero Switzerland",
+		"country" : "CH - Switzerland",
+		"display_name" : "Switzerland"
+	},
+	{
+		"source_id" : 56,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "DE - Germany",
+		"display_name" : "Germany"
+	},
+	{
+		"source_id" : 58,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "AT - Austria",
+		"display_name" : "Austria"
+	},
+	{
+		"source_id" : 59,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "AU - Australia",
+		"display_name" : "Australia"
+	},
+	{
+		"source_id" : 60,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "CA - Canada",
+		"display_name" : "Canada"
+	},
+	{
+		"source_id" : 62,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "FI - Finland",
+		"display_name" : "Finland"
+	},
+	{
+		"source_id" : 63,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "FR - France",
+		"display_name" : "France"
+	},
+	{
+		"source_id" : 65,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "IT - Italy",
+		"display_name" : "Italy"
+	},
+	{
+		"source_id" : 66,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "NL - Netherlands",
+		"display_name" : "Netherlands"
+	},
+	{
+		"source_id" : 67,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "NO - Norway",
+		"display_name" : "Norway"
+	},
+	{
+		"source_id" : 68,
+		"management_entity_group" : "Foodora GmbH",
+		"country" : "SE - Sweden",
+		"display_name" : "Sweden"
+	},
+	{
+		"source_id" : 79,
+		"management_entity_group" : null,
+		"country" : "DE - Germany",
+		"display_name" : "9Cookies-Lieferheld"
+	},
+	{
+		"source_id" : 80,
+		"management_entity_group" : null,
+		"country" : "DE - Germany",
+		"display_name" : "9Cookies-Pizza.de"
+	},
+	{
+		"source_id" : 81,
+		"management_entity_group" : null,
+		"country" : "GB - United Kingdom",
+		"display_name" : "9Cookies-HungyHouse"
+	},
+	{
+		"source_id" : 86,
+		"management_entity_group" : "Lieferheld\/pizza.de",
+		"country" : "DE - Germany",
+		"display_name" : "Pizza.de"
+	},
+	{
+		"source_id" : 88,
+		"management_entity_group" : "Donesi",
+		"country" : "RS - Serbia",
+		"display_name" : "Serbia"
+	},
+	{
+		"source_id" : 91,
+		"management_entity_group" : "Donesi",
+		"country" : "BA - Bosnia and Herzegovina",
+		"display_name" : "Bosnia and Herzegovina"
+	},
+	{
+		"source_id" : 92,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "BD - Bangladesh",
+		"display_name" : "Bangladesh"
+	},
+	{
+		"source_id" : 93,
+		"management_entity_group" : "Foodpanda CEE",
+		"country" : "BG - Bulgaria",
+		"display_name" : "Bulgaria"
+	},
+	{
+		"source_id" : 94,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "BN - Brunei",
+		"display_name" : "Brunei"
+	},
+	{
+		"source_id" : 95,
+		"management_entity_group" : "Hungerstation",
+		"country" : "SA - Saudi Arabia",
+		"display_name" : "Hungerstation - SA"
+	},
+	{
+		"source_id" : 96,
+		"management_entity_group" : "Pauza",
+		"country" : "HR - Croatia",
+		"display_name" : "Croatia"
+	},
+	{
+		"source_id" : 97,
+		"management_entity_group" : "Netpincer",
+		"country" : "HU - Hungary",
+		"display_name" : "Hungary"
+	},
+	{
+		"source_id" : 99,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "AE - United Arab Emirates",
+		"display_name" : "UAE - 24h"
+	},
+	{
+		"source_id" : 100,
+		"management_entity_group" : "Donesi",
+		"country" : "ME - Montenegro",
+		"display_name" : "Montenegro"
+	},
+	{
+		"source_id" : 101,
+		"management_entity_group" : "Foodpanda India",
+		"country" : "IN - India",
+		"display_name" : "India"
+	},
+	{
+		"source_id" : 102,
+		"management_entity_group" : "Foodpanda CEE",
+		"country" : "KZ - Kazakhstan",
+		"display_name" : "Kazakhstan"
+	},
+	{
+		"source_id" : 103,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "MY - Malaysia",
+		"display_name" : "Malaysia"
+	},
+	{
+		"source_id" : 104,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "PH - Philippines",
+		"display_name" : "Philippines"
+	},
+	{
+		"source_id" : 105,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "PK - Pakistan",
+		"display_name" : "Pakistan"
+	},
+	{
+		"source_id" : 106,
+		"management_entity_group" : "Foodpanda CEE",
+		"country" : "GE - Georgia",
+		"display_name" : "Georgia"
+	},
+	{
+		"source_id" : 107,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "HK - Hong Kong",
+		"display_name" : "Hong Kong"
+	},
+	{
+		"source_id" : 108,
+		"management_entity_group" : "Foodpanda CEE",
+		"country" : "RO - Romania",
+		"display_name" : "Romania"
+	},
+	{
+		"source_id" : 109,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "SG - Singapore",
+		"display_name" : "Singapore"
+	},
+	{
+		"source_id" : 110,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "TH - Thailand",
+		"display_name" : "Thailand"
+	},
+	{
+		"source_id" : 111,
+		"management_entity_group" : "Foodpanda APAC",
+		"country" : "TW - Taiwan",
+		"display_name" : "Taiwan"
+	},
+	{
+		"source_id" : 112,
+		"management_entity_group" : "Hungerstation",
+		"country" : "SA - Saudi Arabia",
+		"display_name" : "Hellofood - SA"
+	},
+	{
+		"source_id" : 113,
+		"management_entity_group" : "Otlob",
+		"country" : "EG - Egypt",
+		"display_name" : "Egypt - Otlob"
+	},
+	{
+		"source_id" : 115,
+		"management_entity_group" : "Delivery Hero Korea",
+		"country" : "KR - South Korea",
+		"display_name" : "Gmarket"
+	},
+	{
+		"source_id" : 116,
+		"management_entity_group" : "Talabat Inc.",
+		"country" : "JO - Jordan",
+		"display_name" : "Jordan - Talabat"
+	},
+	{
+		"source_id" : 119,
+		"management_entity_group" : "Carriage Ltd.",
+		"country" : "KW - Kuwait",
+		"display_name" : "Carriage - Kuwait"
+	},
+	{
+		"source_id" : 120,
+		"management_entity_group" : "Carriage Ltd.",
+		"country" : "BH - Bahrain",
+		"display_name" : "Carriage - Bahrain"
+	},
+	{
+		"source_id" : 121,
+		"management_entity_group" : "Carriage Ltd.",
+		"country" : "AE - United Arab Emirates",
+		"display_name" : "Carriage - UAE"
+	},
+	{
+		"source_id" : 122,
+		"management_entity_group" : "Carriage Ltd.",
+		"country" : "QA - Qatar",
+		"display_name" : "Carriage - Qatar"
+	}
+]}

@@ -1,0 +1,163 @@
+{
+"SELECT DISTINCT\n    SPLIT_PART(channel_mapping, '_', 1) AS channel,\n    SPLIT_PART(channel_mapping, '_', 2) AS subchannel\nFROM dwh_bl.marketing_costs": [
+	{
+		"channel" : "Brand",
+		"subchannel" : "SEM"
+	},
+	{
+		"channel" : "Display",
+		"subchannel" : "RMA"
+	},
+	{
+		"channel" : "Display",
+		"subchannel" : "Reach"
+	},
+	{
+		"channel" : "Display",
+		"subchannel" : "RMO"
+	},
+	{
+		"channel" : "Other",
+		"subchannel" : ""
+	},
+	{
+		"channel" : "PaidSocial",
+		"subchannel" : "RMO"
+	},
+	{
+		"channel" : "PaidSocial",
+		"subchannel" : "Reach"
+	},
+	{
+		"channel" : "PaidSocial",
+		"subchannel" : "RMA"
+	},
+	{
+		"channel" : "SEM",
+		"subchannel" : "Competitor"
+	},
+	{
+		"channel" : "SEM",
+		"subchannel" : "Food"
+	},
+	{
+		"channel" : "SEM",
+		"subchannel" : "Restaurants"
+	},
+	{
+		"channel" : "SEM",
+		"subchannel" : "Generic"
+	},
+	{
+		"channel" : "SocialMediaEngagement",
+		"subchannel" : "Promoted"
+	},
+	{
+		"channel" : "SocialMediaEngagement",
+		"subchannel" : "NotPromoted"
+	},
+	{
+		"channel" : "affiliate",
+		"subchannel" : ""
+	},
+	{
+		"channel" : "app",
+		"subchannel" : "rma"
+	},
+	{
+		"channel" : "app",
+		"subchannel" : "reach"
+	},
+	{
+		"channel" : "app",
+		"subchannel" : "rmo"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "outdoor"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "sem"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "newspaper"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "tv"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "restaurant marketing"
+	},
+	{
+		"channel" : "brand",
+		"subchannel" : "radio"
+	},
+	{
+		"channel" : "coop",
+		"subchannel" : ""
+	},
+	{
+		"channel" : "crm",
+		"subchannel" : "rmo"
+	},
+	{
+		"channel" : "display",
+		"subchannel" : "reach"
+	},
+	{
+		"channel" : "display",
+		"subchannel" : "rmo"
+	},
+	{
+		"channel" : "display",
+		"subchannel" : "rma"
+	},
+	{
+		"channel" : "other",
+		"subchannel" : ""
+	},
+	{
+		"channel" : "paidsocial",
+		"subchannel" : "rma"
+	},
+	{
+		"channel" : "paidsocial",
+		"subchannel" : "rmo"
+	},
+	{
+		"channel" : "paidsocial",
+		"subchannel" : "reach"
+	},
+	{
+		"channel" : "promoted",
+		"subchannel" : ""
+	},
+	{
+		"channel" : "remaining",
+		"subchannel" : "discounts"
+	},
+	{
+		"channel" : "sem",
+		"subchannel" : "generic"
+	},
+	{
+		"channel" : "sem",
+		"subchannel" : "restaurants"
+	},
+	{
+		"channel" : "sem",
+		"subchannel" : "food"
+	},
+	{
+		"channel" : "sem",
+		"subchannel" : "competitor"
+	},
+	{
+		"channel" : "seo",
+		"subchannel" : "nonbrand"
+	}
+]}

@@ -101,19 +101,19 @@
     -->
     <!-- Select a Country -->
     <div class="section">
-        <label for="country">Select Country</label>
-        <select name="country" id="country">
-            <option>Germany</option>
-            <option>Australia</option>
-            <option>Finland</option>
-            <option>Norway</option>
-            <option>Italy</option>
-            <option>France</option>
-            <option>Austria</option>
-            <option>Sweden</option>
-            <option>Netherlands</option>
-            <option>Canada</option>
+        <label for="entity">Select Entity</label>
+        <select name="entity" id="entities" class="entities">
+                <option value="Select Entity" selected>Select Entity</option>
         </select>
+        <span class="hide-country" style="display: none">
+            <label for="country">Select Country</label>
+            <select name="country" id="country" class="countries">
+                    <option value="Select Country" selected>Select Country</option>
+            </select>
+        </span>
+
+        <span name="Id's" class="country_id" style="display: none;"></span>
+        
     </div>
 
     <!-- Select a Channel -->
