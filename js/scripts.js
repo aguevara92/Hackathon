@@ -44,7 +44,7 @@ $( function() {
 
 
 
-    $('#brand, #channel, #country, #subchannel, #currency').selectmenu();
+    $('#brand').selectmenu();
 
 
 
@@ -105,6 +105,8 @@ $( function() {
         amountOfDays = parseInt( $("#days").text() );
 
         amount = parseInt( $('#amount').val() );
+
+        campaignID = $('body').attr('campaignID');
 
 
         console.log( 'name of Campaign ' + nameOfCampaign);
@@ -193,7 +195,7 @@ $( function() {
                     } else if (csvHeader[i] == realChannel){
                         thisRow[i] = (amount/amountOfDays).toFixed(2);
                     } else {
-                        thisRow[i] = '';
+                        thisRow[i] = '0';
                     }
 
                 }
@@ -209,7 +211,7 @@ $( function() {
             return thisArray
         }
 
-        exportToCsv( 'esport.csv', generateArray());
+        exportToCsv( campaignID+'.csv', generateArray());
     });
 
 
@@ -220,7 +222,8 @@ $( function() {
 
         percentage = used/(total/100);
         console.log('percentage ' + percentage);
-        $('#loading-target span').width(percentage+'%');
+        $('#loading-target span').text(percentage+'%');
+        $('#loading-target span').css('width',percentage+'%');
     }
     setTarget();
 
@@ -231,7 +234,7 @@ $( function() {
         afterResponsive: function(isResponsive){
         },
         onLeave: function(index, nextIndex, direction){
-            if (index == 8){
+            if (index == 6){
                 used = parseInt( $("#used").text() );
                 amount = parseInt( $('#amount').val() );
 
@@ -242,4 +245,101 @@ $( function() {
     });
 
 
+
 });
+
+
+
+$(document).ready(function() {
+
+	var countrySelected = '';
+    $.getJSON("/data/entities.json", function(obj) {
+		for(var i=0 ; i < obj.alldata.length; i++)
+
+			{
+				var newEntity=$('<option class="country_loaded"></option>').text(obj.alldata[i]['management_entity_group']);
+				$('.entities').append(newEntity);
+			}
+
+
+
+            $('#entities').on('selectmenuchange', function() {
+				$('.country_id').text('');
+				$(".hide-country").hide('fast');
+				$(".countries option").remove();
+				$(".hide-country").show('fast');
+				var itemSelected = $(this).val();
+				entitySelected = [];
+				for(var i=0 ; i < obj.alldata.length; i++) {
+					if (obj.alldata[i]['management_entity_group'] == itemSelected ){
+						entitySelected.push(obj.alldata[i]['display_name']);
+					}
+				}
+
+				for(var i=0 ; i < entitySelected.length; i++) {
+					$('.countries').append('<option>' + entitySelected[i] + '</option>');
+				}
+                $('.countries').prepend('<option value="Select a Country" selected>Select Country</option>')
+
+
+            });
+            $('select').selectmenu();
+
+            $(".countries").on('selectmenuchange', function() {
+				$(".country_id").show('fast');
+				var itemSelected = $(this).val();
+				countrySelected = '';
+				for(var i=0 ; i < obj.alldata.length; i++) {
+					if (obj.alldata[i]['display_name'] == itemSelected ){
+						countrySelected = obj.alldata[i]['source_id'];
+					}
+				}
+
+				$('body').attr('campaignID', countrySelected);
+
+			});
+
+        });
+
+        $.getJSON("/data/channels.json", function(obj) {
+            for(var i=0 ; i < obj.alldata.length; i++)
+                {
+                    var channel=$('<option class="channel_loaded"></option>').text(obj.alldata[i]['channel']);
+                    $('.channels').append(channel);
+                }
+
+                $(".channels").on('selectmenuchange', function() {
+
+                    $(".hide-channel").hide('fast');
+                    $(".subchannels option").remove();
+                    $(".hide-channel").show('fast');
+                    var itemSelected = $(this).val();
+                    channelSelected = [];
+                    for(var i=0 ; i < obj.alldata.length; i++) {
+                        if (obj.alldata[i]['channel'] == itemSelected ){
+                            channelSelected.push(obj.alldata[i]['subchannel']);
+                            console.log(channel);
+                        }
+                    }
+                    console.log(channelSelected);
+                    for(var i=0 ; i < channelSelected.length; i++) {
+                        $('.subchannels').append('<option>' + channelSelected[i] + '</option>');
+                    }
+                    $('.subchannels').prepend('<option selected>Select Sub-channel</option>')
+
+                });
+
+
+            });
+            $('select').selectmenu();
+
+            $( document ).bind( "mousedown.selectmenu-" + this.ids[ 0 ], function( event ) {
+                //check if open and if the clicket targes parent is the same
+                if ( self.isOpen && !$( event.target ).closest( "#" + self.ids[ 1 ] ).length && !$(event.target).hasClass('ui-selectmenu-menu-dropdown')) {
+                    self.close( event );
+                }
+            });
+
+
+    });
+
